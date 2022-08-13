@@ -63,7 +63,7 @@ export default function GymDetails(){
                 Authorization: `${localStorage.getItem("jwtToken")}`
             }});
             setPostValue("");
-            alert("Comment Posted");
+            alert("Comment Posted. PLease refresh the page to see the changes");
         }catch(e){
             alert("Failed to post. Try again")
         }
