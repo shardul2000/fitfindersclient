@@ -1,0 +1,16 @@
+body{
+     color: black;
+}
+.back{
+    height: 100vh;
+    width: 100vw;
+     background-image: url('http://localhost:3000/Mathing.png');
+     background-position: top;
+     background-repeat: no-repeat;
+
+}
+
+.card{
+     padding: 1em;
+}
+
