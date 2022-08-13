@@ -33,7 +33,7 @@ export default function GymDetails(){
             navigate(0);
         });
 
-        axios.get(`/api/gym/getPosts/${gym}`,{headers: {
+        axios.get(`http://fatback-env-1.eba-q5mmqtxi.us-east-1.elasticbeanstalk.com/api/gym/getPosts/${gym}`,{headers: {
             "Content-Type": "application/json",
             Authorization: `${localStorage.getItem("jwtToken")}`
         }})
@@ -58,7 +58,7 @@ export default function GymDetails(){
                 gymName: gym,
                 text: postValue
             }
-            axios.post("/api/gym/createPost",body,{headers: {
+            axios.post("http://fatback-env-1.eba-q5mmqtxi.us-east-1.elasticbeanstalk.com/api/gym/createPost",body,{headers: {
                 "Content-Type": "application/json",
                 Authorization: `${localStorage.getItem("jwtToken")}`
             }});
