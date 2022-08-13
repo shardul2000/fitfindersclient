@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom';
       text: '',
   };
 
-
+/*bjbjhbv*/
 export default function Bot(){
     let navigate = useNavigate();
     const[userMessage, setUserMessage] = useState("");
